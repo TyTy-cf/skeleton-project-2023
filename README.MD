@@ -68,3 +68,18 @@ For the front part :
 - Bootstrap 5 is added, you can find it in "assets/shared/styles/lib"
 - FontAwsome 6 is fully added as **free**
 - A default template for pagination fom KnpPaginator is made, feel free to custom it
+
+---
+
+Change the Git Origin :
+
+Open the file in : ".git/config" with Notepad++
+
+You will find a line like this :
+
+```text
+[remote "origin"]
+	url = git@github.com:TyTy-cf/symfony-skeleton-project.git
+```
+
+Change the URL to yours and save !
