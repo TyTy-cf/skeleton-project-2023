@@ -24,8 +24,16 @@ symfony console ckeditor:install
 symfony console assets:install public
 ```
 
+---
 
-- Basic usage for CKEditor, in FormType :
+Available bundles  :
+- CKEditor
+- Captcha
+- KnpPaginator
+
+---
+
+Basic usage for CKEditor, in FormType :
 
 ```php
 ->add('description', CKEditorType::class, [
@@ -35,10 +43,16 @@ symfony console assets:install public
 
 ---
 
-Available bundles  :
-- CKEditor
-- Captcha
-- KnpPaginator
+Captcha basic usage, in FormType :
+
+```php
+->add('captcha', CaptchaType::class, [
+    'invalid_message' => 'Le captcha ne correspond pas'
+])
+```
+
+
+Feel free to change the captcha basic size in "config/packages/gregwar_captcha.yaml"
 
 ---
 
