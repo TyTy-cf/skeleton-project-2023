@@ -24,13 +24,21 @@ symfony console ckeditor:install
 symfony console assets:install public
 ```
 
+
+- Basic usage for CKEditor, in FormType :
+
+```php
+->add('description', CKEditorType::class, [
+    'label' => 'Description',
+])
+```
+
 ---
 
 Available bundles  :
 - CKEditor
 - Captcha
 - KnpPaginator
-- Lexik Form Filter
 
 ---
 
